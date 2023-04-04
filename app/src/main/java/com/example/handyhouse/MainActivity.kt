@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         btnToWelcome = findViewById(R.id.toLogin)
-        btnToWelcome.setBackgroundColor(resources.getColor(android.R.color.transparent))
         btnToWelcome.setOnClickListener(this)
 
     }

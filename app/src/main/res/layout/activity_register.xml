@@ -24,11 +24,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="48dp"
         android:orientation="vertical"
         android:padding="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,19 +42,21 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/input_form"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/nunito_regular"
+                android:hint="Email"
+                android:elevation="2dp"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/input_form"
+                android:fontFamily="@font/nunito_regular"
                 android:hint="Username"
-
-                />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/input_form"
-                android:fontFamily="@font/poppins_regular"
-                android:hint="Password"
+                android:elevation="2dp"
+                android:inputType="text"
                 android:textColor="#232323"
 
                 />
@@ -64,11 +67,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/input_form"
-                android:fontFamily="@font/poppins_regular"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito_regular"
                 android:hint="Password"
-                android:textColor="#232323"
-
-                />
+                android:inputType="textPassword"
+                android:textColor="#232323" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -76,8 +79,10 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/input_form"
-                android:fontFamily="@font/poppins_regular"
+                android:elevation="2dp"
+                android:fontFamily="@font/nunito_regular"
                 android:hint="Password"
+                android:inputType="textPassword"
                 android:textColor="#232323"
 
                 />
@@ -90,7 +95,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginBottom="16dp"
             android:background="@drawable/button_rounded"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/nunito_semibold"
             android:text="Register"
             android:textAllCaps="false"
             android:textColor="#232323" />

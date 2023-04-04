@@ -26,11 +26,12 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="48dp"
         android:orientation="vertical"
         android:padding="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,9 +44,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/input_form"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/nunito_regular"
                 android:hint="Username"
-
+                android:inputType="text"
+                android:textColor="#232323"
+                android:elevation="2dp"
                 />
 
             <EditText
@@ -54,9 +57,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/input_form"
-                android:fontFamily="@font/poppins_regular"
+                android:fontFamily="@font/nunito_regular"
                 android:hint="Password"
+                android:inputType="textPassword"
                 android:textColor="#232323"
+                android:elevation="2dp"
 
                 />
         </LinearLayout>
@@ -64,31 +69,29 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
 
 
             <CheckBox
                 android:id="@+id/checkBox"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_weight="1"
+                android:fontFamily="@font/nunito_medium"
                 android:text="Ingat Saya"
-                android:fontFamily="@font/poppins_medium"
-                android:textColor="#475467"
-                />
+                android:textColor="#475467" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Lupa Password?"
-                android:textAllCaps="false"
-                android:textAlignment="textEnd"
-                android:fontFamily="@font/poppins_semibold"
-                android:textColor="@color/white"
                 android:background="@null"
-                />
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Lupa Password?"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
 
         </LinearLayout>
@@ -100,7 +103,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginBottom="16dp"
             android:background="@drawable/button_rounded"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/nunito_semibold"
             android:text="Login"
             android:textColor="#232323" />
 
